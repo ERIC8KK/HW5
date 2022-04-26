@@ -13,8 +13,8 @@
  new1_data_frame<-new_data_frame[-c(1,3,5),-c(2.3)]
  new1_data_frame
  
- x<- c(data_frame[1,2],data_frame[4,2],data_frame[5,2]
- y<- c(data_frame[1,3], data_frame[4,3], data_frame[5,3])
+ x<- c(data_frame[1, name],data_frame[4,name],data_frame[5,name]
+ y<- c(data_frame[1,salary], data_frame[4,salary], data_frame[5,salary])
  barplot(y,names.arg=x)
  
  x<-c(max(new_data_frame$salary)，min(new_data_frame$salary)，median(new_data_frame$salary))
@@ -24,12 +24,68 @@
  # Question3
  ff=read.cvs('Amazon.cvs')
  head(ff)
- 
+ summary(ff)
  max(ff$Total Charged)
  min(ff$Total Charged)
  median(ff$Total Charged)
  mean(ff$Total Charged)
  std(ff$Total Charged)
  
+# Monthly
+
+    if data[0]=="01"or data [0]=="1"
+        {new_col_month[row]="Jan"}
+        else if data[0]=="02"or data [0]=="2"
+        {new_col_month[row]="Feb"}
+        else if data[0]=="03"or data [0]=="3"
+        {new_col_month[row]="Mar"}
+        else if data[0]=="04"or data [0]=="4"
+        {new_col_month[row]="Apr"}
+        else if data[0]=="05"or data [0]=="5"
+        {new_col_month[row]="May"}
+        else if data[0]=="06"or data [0]=="6"
+        {new_col_month[row]="June"}
+        else if data[0]=="07"or data [0]=="7"
+        {new_col_month[row]="July"}
+        else if data[0]=="08"or data [0]=="8"
+        {new_col_month[row]="Aug"}
+        else if data[0]=="09"or data [0]=="9"
+        {new_col_month[row]="Sep"}
+        else if data[0]=="10":
+        {new_col_month[row]="Oct"}
+        else if data[0]=="11":
+        {new_col_month[row]="Nov"}
+        else if data[0]=="12":
+        {new_col_month[row]="Dec"}
+    
+ x<-(ff$month)
+ mylabel<-c(rownames(ff$month))
+ pie(x, label=mylabel, main="monthly charges")
  
+ x<- c(ff[1,2],data_frame[4,2],data_frame[5,2]
+ y<- c(data_frame[1,3], data_frame[4,3], data_frame[5,3])
+ barplot(y,names.arg=x)
+
+Yearly 
+
+myflame
+year_ff <- data.flame(id =c(1,2,3,4,5), name=c("2017","2018","2019","2020","2021"), salary=(397.23， 369.37999999999994， 394.41， 265.58， 897.07))
+ year_ff=
+ x<-c(397.23， 369.37999999999994， 394.41， 265.58， 897.07))
+ mylabel<-c("2017","2018","2019","2020","2021")
+ pie(x, label=mylabel, main="monthly charges")
  
+ x<- c("2017","2018","2019","2020","2021"]
+ y<- c(397.23， 369.37999999999994， 394.41， 265.58， 897.07))
+ barplot(y,names.arg=x)
+ 
+ line 1<-c(29.98, 122.47, 34.48, 61.35, 134.47, 14.48)
+ line 2<-c(26.50, 10.60, 64.22, 14.19, 47.05, 21.16, 29.23, 24.82, 33.91, 43.82, 22.99, 17.12, 13.77)
+ line 3<-c(7.99, 27.55, 26.50, 25.03, 35.86, 11.73, 37.08, 22.25, 19.07, 15.36, 39.21, 22.84, 22.97, 41.20, 16.95, 22.82)
+ line 4 <-c(15.68, 33.33, 51.82, 27.00, 31.79, 57.23, 18.01, 30.72)
+ line 5 <-c(35.74, 22.25, 96.43, 14.09, 47.68, 31.79, 33.90, 18.01, 21.19, 90.06, 134.61 ,84.79, 31.79, 9.21, 26.49, 78.38, 36.02, 39.17, 15.47)
+ plot(line 1, type="1", col="red")
+lines(line 1, type="1", col="green")
+lines(line 1, type="1", col="blue")
+lines(line 1, type="1", col="yellow")
+lines(line 1, type="1", col="purple")
